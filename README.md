@@ -1,5 +1,31 @@
 # RecSys course
-The course on recommender systems conducted in National Research University - Higher School of Economics (Moscow, Russia). Academic year 2022-2023. 
+The course on recommender systems conducted in National Research University - Higher School of Economics (Moscow, Russia). Academic year 2022-2023 /
+Курс по рекомендательным системам, который проводится в Национальном исследовательском университете Высшей школе Экономики (Москва). Академический год 2022 - 2023. 
+
+
+## Полезные материалы
+
+- [Wiki-страница курса,]() на ней для каждого семинара публикуются дополнительные материалы, которые необходимо просмотреть на неделе, когда проходит семинар. 
+- Материалы для каждого семинара лежат в папках `/seminar*`
+- Если вы хотите скачать из репозитория конкретную папку, просто вставьте ссылку на неё [в сервис для скачки.](https://minhaskamal.github.io/DownGit/#/home)
+- Любые вопросы можно задавать в чат с технической поддержкой [![TG]() 
+-  [Таблица с вашими оценками]()
+
+## Самый важный раздел
+
+Оценка ставится по формуле:
+
+```
+0.3 * Home Assignments + 0.15 * Article Summary + 0.15 * Weekly Quizzes + 0.4 * Exam
+```
+где
+Home Assignments - 3 домашних работы в Jupyter Notebook (max 10 баллов за каждую). 
+Article Summary - конспект/презентация статьи из предложенного списка с критическим анализом (без выступления на семинаре) (max 10 баллов). 
+Weekly Quizzes - 7 квизов по мотивам материалов семинаров, которые сдаются перед началом следующего занятия в Google Forms (ариф.среднее за все квизы, max 10 баллов за каждый). 
+Exam - письменный экзамен в формате решения case-study построения рекомендательной системы для бизнеса (max 10 баллов). 
+
+
+## Course Outline / Большой план маленьких побед
 
 Week 1
 -----
@@ -92,3 +118,22 @@ Week 8
 -----
 Seminar 15 & Seminar 16
 - Vanilla Production-ready RecSys service.
+
+
+## Контрибьюторы и создатели
+
+* [Ананьева Марина](https://github.com/anamarina)
+* [Бредихин Саша](https://github.com/BredikhinAlexander)
+* [Конюшенко Юля](https://github.com/RussianJulliet)
+* [Красильников Денис](https://github.com/deethereal)
+* [Лашинин Олег](https://github.com/fotol1)
+* [Милоградский Саша](https://github.com/Nemexur)
+* [Печатов Михаил](https://github.com/pechatov)
+* [Рамазанова Ая](https://github.com/AyaRamazanova)
+* [Случевский Стас](https://github.com/stsl256)
+* [Цыганков Макс](https://github.com/Chubasik)
+
+
+## Лицензия
+
+Весь контент, созданный для этого курса распространяются на правах лицензии [MIT License](https://github.com/hse-econ-data-science/dap_2020_fall/blob/master/LICENSE) Материалы публикуются как общественное достояние.
