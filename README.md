@@ -1,9 +1,7 @@
 # RecSys course
 The course on recommender systems conducted in National Research University - Higher School of Economics (Moscow, Russia). Academic year 2022-2023. 
 
-Course on recommender systems.
-
-Week1
+Week 1
 -----
 
 Seminar 1
@@ -21,7 +19,7 @@ Seminar 2
 - Matrix Factorization (SVD et al.)
 - EASE
 
-Week2
+Week 2
 -----
 Seminar 3
 - Collaborative Filtering (ALS and iALS, HALS, NeuralCF) 
@@ -33,7 +31,7 @@ Seminar 4
 - Hybrid recommenders taxonomy
 - LightFM (hybrid content model), Lightfm library
 
-Week3
+Week 3
 -----
 Seminar 5
 - Gradient boosting for ranking task
