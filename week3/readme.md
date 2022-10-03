@@ -1,5 +1,7 @@
-Seminars 5-6
+Week 3
 -------------
+
+Seminars 5, 6. 
 
 - Content-based recommender models
 - DSSM for RecSys
