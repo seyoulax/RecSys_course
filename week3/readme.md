@@ -5,10 +5,10 @@ Seminars 5, 6.
 
 - Content-based recommender models
 - DSSM for RecSys
-- Hybrid recommenders taxonomy
-- LightFM (hybrid content model), Lightfm library
+- LightFM (hybrid content model)
 
+- Hybrid recommenders taxonomy
 - Gradient boosting for ranking task
-- Example of cascade recommender model (using gradient boosting on the second level)
+- Example of two-level recommender model (using gradient boosting on the second level)
 - Important preprocessing steps
-- Cross-validation types
+- Cross-validation types discussion
