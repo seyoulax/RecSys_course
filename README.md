@@ -40,33 +40,28 @@ Seminar 1
 
 Seminar 2
 - Hands-on example on the MovieLens dataset: movie recommender system. 
-- Basic baseline (TopPopular)
-- Item-based and user-based similarity, similarity metrics. 
-- Matrix Factorization (SVD et al.)
-- EASE
+- Basic baselines
 
 Week 2
 -----
-Seminar 3
+Seminar 3 - 4
+- Item-based and user-based similarity, similarity metrics. 
+- Matrix Factorization (SVD et al.)
 - Collaborative Filtering (ALS and iALS, HALS, NeuralCF) 
-- implicit library
 
-Seminar 4
+Week 3
+-----
+Seminar 5
 - Content-based recommender models
 - DSSM for RecSys
 - Hybrid recommenders taxonomy
 - LightFM (hybrid content model), Lightfm library
 
-Week 3
------
-Seminar 5
+Seminar 6
 - Gradient boosting for ranking task
 - Example of cascade recommender model (using gradient boosting on the second level)
 - Important preprocessing steps
 - Cross-validation types
-
-Seminar 6
-- Autoencoders and Variational autoencoders for RecSys (VAE, Mult-VAE, Multi-VAE, Rec-VAE)
 
 Week 4
 ------
@@ -76,6 +71,7 @@ Seminar 7
 - Next-basket and next-item prediction tasks
 
 Seminar 8
+- Autoencoders and Variational autoencoders for RecSys (VAE, Mult-VAE, Multi-VAE, Rec-VAE)
 - Transformer-based models for RecSys (BERT4Rec, SASRec, etc.)
 - Transformers4rec NVIDIA library
 
@@ -123,15 +119,8 @@ Seminar 15 & Seminar 16
 ## Контрибьюторы и создатели
 
 * [Ананьева Марина](https://github.com/anamarina)
-* [Бредихин Саша](https://github.com/BredikhinAlexander)
-* [Конюшенко Юля](https://github.com/RussianJulliet)
-* [Красильников Денис](https://github.com/deethereal)
-* [Лашинин Олег](https://github.com/fotol1)
 * [Милоградский Саша](https://github.com/Nemexur)
-* [Печатов Михаил](https://github.com/pechatov)
 * [Рамазанова Ая](https://github.com/AyaRamazanova)
-* [Случевский Стас](https://github.com/stsl256)
-* [Цыганков Макс](https://github.com/Chubasik)
 
 
 ## Лицензия
