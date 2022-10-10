@@ -66,21 +66,19 @@ Seminar 6
 Week 4
 ------
 Seminar 7
-- Sequential и session-based models
-- RecBole library
+- Sequential models
 - Next-basket and next-item prediction tasks
 
 Seminar 8
-- Autoencoders and Variational autoencoders for RecSys (VAE, Mult-VAE, Multi-VAE, Rec-VAE)
-- Transformer-based models for RecSys (BERT4Rec, SASRec, etc.)
-- Transformers4rec NVIDIA library
+- Context-aware recommender systems
+- Time-aware и time-dependent models
 
 Week 5
 --------
 Seminar 9
-- Context-aware recommender models
-- Time-aware и time-dependent models
-- Geo-dependent models
+- Autoencoders and Variational autoencoders for RecSys (VAE, Mult-VAE, Multi-VAE, Rec-VAE)
+- Transformer-based models for RecSys (BERT4Rec, SASRec, etc.)
+- Transformers4rec NVIDIA library
 
 Seminar 10
 - Graph-based recommender systems overview
