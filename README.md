@@ -75,23 +75,22 @@ Seminar 8
 
 Week 5
 --------
-Seminar 9
+Seminars 9 - 10
 - Autoencoders and Variational autoencoders for RecSys (VAE, Mult-VAE, Multi-VAE, Rec-VAE)
-- Transformer-based models for RecSys (BERT4Rec, SASRec, etc.)
-- Transformers4rec NVIDIA library
-
-Seminar 10
-- Graph-based recommender systems overview
-- Inductive learning (out-of-sample users, cold start problem)
-- LightGCN, GF-CF, P3 alpha, GraphSage -> PinSage
 
 Week 6
 -----
 Seminar 11
+- Graph-based recommender systems overview
+- Inductive learning (out-of-sample users, cold start problem)
+- LightGCN, GF-CF, P3 alpha, GraphSage -> PinSage
 - Knowledge-based graph recommender systems overview
 - KDA, KGAT, KGCN, RippleNet
 
 Seminar 12
+
+- Transformer-based models for RecSys (BERT4Rec, SASRec, etc.)
+- Transformers4rec NVIDIA library
 - RL for RecSys overview
 - Hands-on example of RL model for recommender systems
 
@@ -118,6 +117,7 @@ Seminar 15 & Seminar 16
 
 * [Ананьева Марина](https://github.com/anamarina)
 * [Милоградский Саша](https://github.com/Nemexur)
+* [Милоградский Саша](https://github.com/fotol1)
 * [Рамазанова Ая](https://github.com/AyaRamazanova)
 
 
