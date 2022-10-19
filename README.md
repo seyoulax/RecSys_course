@@ -83,29 +83,13 @@ Week 6
 Seminar 11
 - Graph-based recommender systems overview
 - Inductive learning (out-of-sample users, cold start problem)
-- LightGCN, GF-CF, P3 alpha, GraphSage -> PinSage
-- Knowledge-based graph recommender systems overview
-- KDA, KGAT, KGCN, RippleNet
-
-Seminar 12
-
-- Transformer-based models for RecSys (BERT4Rec, SASRec, etc.)
-- Transformers4rec NVIDIA library
-- RL for RecSys overview
-- Hands-on example of RL model for recommender systems
+- GNN, GCN, GraphSage -> PinSage, GAT
 
 Week 7
 -----
 Seminar 13
 - Explainability & interpretability of recommender systems
-- Attention is not explanation? 
-
-Seminar 14
-- Designing anf analyzing A/B tests in recommeder systems
-- Feedback loop problem
-- Bias types and debiasing techniques
-- Multiarmed bandits
-- RL testing 
+- Knowledge-based graph recommenders
 
 Week 8
 -----
@@ -118,7 +102,6 @@ Seminar 15 & Seminar 16
 * [Marina Ananyeva](https://github.com/anamarina)
 * [Alex Milogradskiy](https://github.com/Nemexur)
 * [Oleg Lashinin](https://github.com/fotol1)
-* [Ayzhan Ramazanova](https://github.com/AyaRamazanova)
 
 
 ## License
