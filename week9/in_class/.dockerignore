@@ -1,0 +1,22 @@
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+# Common VCS dirs
+.DS_Store
+.git/
+.gitignore
+# IDEs
+.project
+.idea/
+*.tmproj
+.vscode/
+# Poetry
+poetry.toml
+# Python
+__pycache__
+build/
+*env/
+.python-version
+# Other
+docker/
+metrics/
