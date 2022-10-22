@@ -4,10 +4,6 @@ from fastapi import FastAPI, Response
 from server.api import register_routes
 
 
-async def health() -> Response:
-    return Response(content="ok", status_code=HTTPStatus.OK)
-
-
 def create_app() -> FastAPI:
     app = FastAPI(title="HSE-RecSys Server")
     register_routes(app)
