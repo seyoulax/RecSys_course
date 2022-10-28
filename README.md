@@ -16,7 +16,7 @@ The course on recommender systems conducted in National Research University - Hi
 The final grade is calculated as follows:
 
 ```
-0.3 * Home Assignments + 0.15 * Article Summary + 0.15 * Weekly Quizzes + 0.4 * Exam
+0.3 * Home Assignment + 0.15 * Article Summary + 0.15 * Weekly Quizzes + 0.4 * Exam
 ```
 where
 Home Assignments - 3 home assignments in Jupyter Notebook (max 10 points each). 
