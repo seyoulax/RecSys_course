@@ -229,9 +229,9 @@ def run_map(func: Callable) -> None:
             "topk": [1, 3, 10, 100],
             "expected": {
                 1: 1.0,
-                3: (1 + 2 / 3) / 3,
-                10: (1 + 2 / 3) / 4,
-                100: (1 + 2 / 3) / 4,
+                3: (1 + 2 / 3) / 2,
+                10: (1 + 2 / 3) / 2,
+                100: (1 + 2 / 3) / 2,
             },
         },
         {
@@ -255,22 +255,22 @@ def run_map(func: Callable) -> None:
             "expected": {
                 1: (0.0 + 1.0 + 0.0 + 0.0) / 4,
                 3: (
-                    (1 / 2 + 2 / 3) / 3
+                    (1 / 2 + 2 / 3) / 2
+                    + 1
+                    + 1 / 2
                     + 1 / 3
-                    + (1 / 2) / 3
-                    + (1 / 3) / 3
                 ) / 4,
                 10: (
-                    (1 / 2 + 2 / 3 + 3 / 6 + 4 / 7 + 5 / 8) / 10
-                    + (1 + 2 / 9 + 3 / 10) / 10
-                    + (1 / 2 + 2 / 4 + 3 / 6 + 4 / 8 + 5 / 9) / 10
-                    + (1 / 3 + 2 / 5 + 3 / 8) / 10 
+                    (1 / 2 + 2 / 3 + 3 / 6 + 4 / 7 + 5 / 8) / 5
+                    + (1 + 2 / 9 + 3 / 10) / 3
+                    + (1 / 2 + 2 / 4 + 3 / 6 + 4 / 8 + 5 / 9) / 5
+                    + (1 / 3 + 2 / 5 + 3 / 8) / 3 
                 ) / 4,
                 100: (
-                    (1 / 2 + 2 / 3 + 3 / 6 + 4 / 7 + 5 / 8 + 6 / 12 + 7 / 14 + 8 / 20) / 20
-                    + (1 + 2 / 9 + 3 / 10 + 4 / 12 + 5 / 14 + 6 / 15 + 7 / 16 + 8 / 17) / 20
-                    + (1 / 2 + 2 / 4 + 3 / 6 + 4 / 8 + 5 / 9 + 6 / 11 + 7 / 13 + 8 / 16 + 9 / 18 + 10 / 19) / 20
-                    + (1 / 3 + 2 / 5 + 3 / 8 + 4 / 12 + 5 / 16 + 6 / 17 + 7 / 18 + 8 / 19 + 9 / 20) / 20
+                    (1 / 2 + 2 / 3 + 3 / 6 + 4 / 7 + 5 / 8 + 6 / 12 + 7 / 14 + 8 / 20) / 8
+                    + (1 + 2 / 9 + 3 / 10 + 4 / 12 + 5 / 14 + 6 / 15 + 7 / 16 + 8 / 17) / 8
+                    + (1 / 2 + 2 / 4 + 3 / 6 + 4 / 8 + 5 / 9 + 6 / 11 + 7 / 13 + 8 / 16 + 9 / 18 + 10 / 19) / 10
+                    + (1 / 3 + 2 / 5 + 3 / 8 + 4 / 12 + 5 / 16 + 6 / 17 + 7 / 18 + 8 / 19 + 9 / 20) / 9
                 ) / 4
             },
         },
@@ -357,7 +357,7 @@ def run_mnap(func: Callable) -> None:
                 1: (0.0 + 1.0 + 0.0 + 0.0) / 4,
                 3: (
                     (1 / 2 + 2 / 3) / 3
-                    + 1 / 3
+                    + 1 / 3 
                     + (1 / 2) / 3
                     + (1 / 3) / 3
                 ) / 4,
@@ -456,24 +456,24 @@ def run_ndcg(func: Callable) -> None:
             "topk": [1, 3, 10, 100],
             "expected": {
                 1: (0.0 + 1.0 + 0.0 + 0.0) / 4,
-                3: (
+                3: round((
                     (1 / math.log2(2 + 1) + 1 / math.log2(3 + 1)) / (1 / math.log2(1 + 1) + 1 / math.log2(2 + 1) + 1 / math.log2(3 + 1))
                     + (1 / math.log2(1 + 1)) / (1 / math.log2(1 + 1) + 1 / math.log2(2 + 1) + 1 / math.log2(3 + 1))
                     + (1 / math.log2(2 + 1)) / (1 / math.log2(1 + 1) + 1 / math.log2(2 + 1) + 1 / math.log2(3 + 1))
                     + (1 / math.log2(3 + 1)) / (1 / math.log2(1 + 1) + 1 / math.log2(2 + 1) + 1 / math.log2(3 + 1))
-                ) / 4,
-                10: (
+                ) / 4, 4),
+                10: round((
                     (1 / math.log2(2 + 1) + 1 / math.log2(3 + 1) + 1 / math.log2(6 + 1) + 1 / math.log2(7 + 1) + 1 / math.log2(8 + 1)) / (1 / math.log2(1 + 1) + 1 / math.log2(2 + 1) + 1 / math.log2(3 + 1) + 1 / math.log2(4 + 1) + 1 / math.log2(5 + 1) + 1 / math.log2(6 + 1) + 1 / math.log2(7 + 1) + 1 / math.log2(8 + 1))
                     + (1 / math.log2(1 + 1) + 1 / math.log2(9 + 1) + 1 / math.log2(10 + 1)) / (1 / math.log2(1 + 1) + 1 / math.log2(2 + 1) + 1 / math.log2(3 + 1) + 1 / math.log2(4 + 1) + 1 / math.log2(5 + 1) + 1 / math.log2(6 + 1) + 1 / math.log2(7 + 1) + 1 / math.log2(8 + 1))
                     + (1 / math.log2(2 + 1) + 1 / math.log2(4 + 1) + 1 / math.log2(6 + 1) + 1 / math.log2(8 + 1) + 1 / math.log2(9 + 1)) / (1 / math.log2(1 + 1) + 1 / math.log2(2 + 1) + 1 / math.log2(3 + 1) + 1 / math.log2(4 + 1) + 1 / math.log2(5 + 1) + 1 / math.log2(6 + 1) + 1 / math.log2(7 + 1) + 1 / math.log2(8 + 1) + 1 / math.log2(9 + 1) + 1 / math.log2(10 + 1))
                     + (1 / math.log2(3 + 1) + 1 / math.log2(5 + 1) + 1 / math.log2(8 + 1)) / (1 / math.log2(1 + 1) + 1 / math.log2(2 + 1) + 1 / math.log2(3 + 1) + 1 / math.log2(4 + 1) + 1 / math.log2(5 + 1) + 1 / math.log2(6 + 1) + 1 / math.log2(7 + 1) + 1 / math.log2(8 + 1) + 1 / math.log2(9 + 1))
-                ) / 4,
-                100: (
-                    (1 / math.log2(2 + 1) + 1 / math.log2(3 + 1) + 1 / math.log2(6 + 1) + 1 / math.log2(7 + 1) + 1 / math.log2(8 + 1) + 1 / math.log2(16 + 1) + 1 / math.log2(19 + 1) + 1 / math.log2(20 + 1)) / (1 / math.log2(1 + 1) + 1 / math.log2(2 + 1) + 1 / math.log2(3 + 1) + 1 / math.log2(4 + 1) + 1 / math.log2(5 + 1) + 1 / math.log2(6 + 1) + 1 / math.log2(7 + 1) + 1 / math.log2(8 + 1))
-                    + (1 / math.log2(1 + 1) + 1 / math.log2(9 + 1) + 1 / math.log2(10 + 1) + 1 / math.log2(11 + 1) + 1 / math.log2(12 + 1) + 1 / math.log2(13 + 1) + 1 / math.log2(15 + 1) + 1 / math.log2(17 + 1)) / (1 / math.log2(1 + 1) + 1 / math.log2(2 + 1) + 1 / math.log2(3 + 1) + 1 / math.log2(4 + 1) + 1 / math.log2(5 + 1) + 1 / math.log2(6 + 1) + 1 / math.log2(7 + 1) + 1 / math.log2(8 + 1))
-                    + (1 / math.log2(2 + 1) + 1 / math.log2(4 + 1) + 1 / math.log2(6 + 1) + 1 / math.log2(8 + 1) + 1 / math.log2(9 + 1) + 1 / math.log2(13 + 1) + 1 / math.log2(14 + 1) + 1 / math.log2(16 + 1) + 1 / math.log2(18 + 1) + 1 / math.log2(19 + 1)) / (1 / math.log2(1 + 1) + 1 / math.log2(2 + 1) + 1 / math.log2(3 + 1) + 1 / math.log2(4 + 1) + 1 / math.log2(5 + 1) + 1 / math.log2(6 + 1) + 1 / math.log2(7 + 1) + 1 / math.log2(8 + 1) + 1 / math.log2(9 + 1) + 1 / math.log2(10 + 1))
-                    + (1 / math.log2(3 + 1) + 1 / math.log2(5 + 1) + 1 / math.log2(8 + 1) + 1 / math.log2(12 + 1) + 1 / math.log2(15 + 1) + 1 / math.log2(16 + 1) + 1 / math.log2(17 + 1) + 1 / math.log2(18 + 1) + 1 / math.log2(19 + 1)) / (1 / math.log2(1 + 1) + 1 / math.log2(2 + 1) + 1 / math.log2(3 + 1) + 1 / math.log2(4 + 1) + 1 / math.log2(5 + 1) + 1 / math.log2(6 + 1) + 1 / math.log2(7 + 1) + 1 / math.log2(8 + 1) + 1 / math.log2(9 + 1))
-                ) / 4
+                ) / 4, 4),
+                100: round((
+                    (1 / math.log2(2 + 1) + 1 / math.log2(3 + 1) + 1 / math.log2(6 + 1) + 1 / math.log2(7 + 1) + 1 / math.log2(8 + 1) + 1 / math.log2(12 + 1) + 1 / math.log2(14 + 1) + 1 / math.log2(20 + 1)) / (1 / math.log2(1 + 1) + 1 / math.log2(2 + 1) + 1 / math.log2(3 + 1) + 1 / math.log2(4 + 1) + 1 / math.log2(5 + 1) + 1 / math.log2(6 + 1) + 1 / math.log2(7 + 1) + 1 / math.log2(8 + 1))
+                    + (1 / math.log2(1 + 1) + 1 / math.log2(9 + 1) + 1 / math.log2(10 + 1) + 1 / math.log2(12 + 1) + 1 / math.log2(14 + 1) + 1 / math.log2(15 + 1) + 1 / math.log2(16 + 1) + 1 / math.log2(17 + 1)) / (1 / math.log2(1 + 1) + 1 / math.log2(2 + 1) + 1 / math.log2(3 + 1) + 1 / math.log2(4 + 1) + 1 / math.log2(5 + 1) + 1 / math.log2(6 + 1) + 1 / math.log2(7 + 1) + 1 / math.log2(8 + 1))
+                    + (1 / math.log2(2 + 1) + 1 / math.log2(4 + 1) + 1 / math.log2(6 + 1) + 1 / math.log2(8 + 1) + 1 / math.log2(9 + 1) + 1 / math.log2(11 + 1) + 1 / math.log2(13 + 1) + 1 / math.log2(16 + 1) + 1 / math.log2(18 + 1) + 1 / math.log2(19 + 1)) / (1 / math.log2(1 + 1) + 1 / math.log2(2 + 1) + 1 / math.log2(3 + 1) + 1 / math.log2(4 + 1) + 1 / math.log2(5 + 1) + 1 / math.log2(6 + 1) + 1 / math.log2(7 + 1) + 1 / math.log2(8 + 1) + 1 / math.log2(9 + 1) + 1 / math.log2(10 + 1))
+                    + (1 / math.log2(3 + 1) + 1 / math.log2(5 + 1) + 1 / math.log2(8 + 1) + 1 / math.log2(12 + 1) + 1 / math.log2(16 + 1) + 1 / math.log2(17 + 1) + 1 / math.log2(18 + 1) + 1 / math.log2(19 + 1) + 1 / math.log2(20 + 1)) / (1 / math.log2(1 + 1) + 1 / math.log2(2 + 1) + 1 / math.log2(3 + 1) + 1 / math.log2(4 + 1) + 1 / math.log2(5 + 1) + 1 / math.log2(6 + 1) + 1 / math.log2(7 + 1) + 1 / math.log2(8 + 1) + 1 / math.log2(9 + 1))
+                ) / 4, 4)
             },
         },
     ]
