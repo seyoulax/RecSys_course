@@ -1,0 +1,15 @@
+---
+version: "3.9"
+
+services:
+  base:
+    image: "hse-recsys:python3.10"
+    build:
+      dockerfile: docker/base.Dockerfile
+      context: "."
+  redis:
+    container_name: hse-recsys-redis
+  triton:
+    container_name: hse-recsys-triton
+  api:
+    container_name: hse-recsys-api
