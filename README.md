@@ -8,7 +8,7 @@ The course on recommender systems conducted in National Research University - Hi
 - [Wiki page of this course](http://wiki.cs.hse.ru/RecSys_2023). 
 - The code materials for each seminars can be found in the corresponding folders `/seminar*`. 
 - To download any folder please use [this link.](https://minhaskamal.github.io/DownGit/#/home)
-- Любые вопросы можно задавать в чат с технической поддержкой[![TG1](https://img.shields.io/badge/Telegram-chat-blue)](https://t.me/+9MN5JL4xj5xjYTBi)
+- Любые вопросы можно задавать в чат с технической поддержкой[![TG1]() - link is available till 30.10.2023
 -  [Table with grades](https://docs.google.com/spreadsheets/d/1YcIt-9AGwGhYj4vO6wnLUS5rZDrC83Wa/edit?usp=sharing&ouid=104963596150558587903&rtpof=true&sd=true)
 
 ## The most important section
