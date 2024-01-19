@@ -1,101 +1,53 @@
 # RecSys course
-The course on recommender systems conducted in National Research University - Higher School of Economics (Moscow, Russia). Academic year 2023 /
-Курс по рекомендательным системам, который проводится в Национальном исследовательском университете Высшей школе Экономики (Москва). Академический год 2023. 
-
+The course on recommender systems conducted in National Research University - Higher School of Economics (Moscow, Russia). Academic year 2023/2024. 
 
 ## Useful Links
 
-- [Wiki page of this course](http://wiki.cs.hse.ru/RecSys_2023). 
-- The code materials for each seminars can be found in the corresponding folders `/seminar*`. 
+- [Wiki page of this course](http://wiki.cs.hse.ru/%D0%A0%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B)
+- [Table with grades](https://docs.google.com/spreadsheets/d/1ODp5Hw5QZmo-Mvw2nZ9nNTdT0zRgk8m4HAuN0-zz1KI/edit?usp=sharing)
+- The code materials for each seminars can be found in the corresponding folders `/seminar*`.
 - To download any folder please use [this link.](https://minhaskamal.github.io/DownGit/#/home)
-- Любые вопросы можно задавать в чат с технической поддержкой - link is available till 30.10.2023
--  [Table with grades](https://docs.google.com/spreadsheets/d/1YcIt-9AGwGhYj4vO6wnLUS5rZDrC83Wa/edit?usp=sharing&ouid=104963596150558587903&rtpof=true&sd=true)
+- Recordings of lectures and seminars (coming soon). 
+- All questions can be asked in the Telegram chat (the invitation link is available only to students)
 
 ## The most important section
 
 The final grade is calculated as follows:
 
 ```
-0.3 * Home Assignment + 0.15 * Article Summary + 0.25 * Weekly Quizzes + 0.3 * Exam
+0.3 * Home Assignment + 0.15 * Article Summary + 0.25 * Quizzes + 0.3 * Exam
 ```
 where
-Home Assignments - 1 home assignments in Jupyter Notebook (max 10 points). 
-Article Summary - конспект/презентация статьи из предложенного списка с критическим анализом (без выступления на семинаре) (max 10 баллов). 
-Weekly Quizzes - 6 квизов по мотивам материалов семинаров, которые сдаются перед началом следующего занятия в Google Forms (ариф.среднее за все квизы, max 10 баллов за каждый). 
-Exam - письменный экзамен в формате решения case-study построения рекомендательной системы для бизнеса (max 10 баллов). 
+Home Assignments - 2 home assignments in Jupyter Notebook (max 10 points). 
+Article Summary - a report on a research paper on Recommender Systems with your critical analysis (max 10 points). 
+Quizzes - 15 weekly quizzes on lecture's and seminars' topics in Google Forms (max 10 points). 
+Exam - oral examination on all topics (max 10 points). 
 
 
-## Course Outline / Big plan for small victories
+## Course outline 
 
-Week 1
------
-
-Seminar 1-2
-- Examples of RecSys models in production.
-- Formalization of the ranking (recommender systems) task (2 popular types of tasks, 2 types of data sets). 
-- Ranking functions (BPR, WARP, RankNET, LambdaRank).
-- Metrics for the quality estimation (Hitrate, Precision@k, Recall@k, MAP@k, NDCG@k).
-- Taxonomy of RecSys approaches ([MF, FM, CF & other general], Content-based [including knowledge graph based, GB for ranking], Context-based, Sequential and session-based models, RL-based models, Hybrid [including two-level cascade]) approaches.
-- Recommended sources on RecSys
-- Hands-on example on the MovieLens dataset: movie recommender system. 
-- Basic baselines
-
-Week 2
------
-Seminar 3 - 4
-- Item-based and user-based similarity, similarity metrics. 
-- Matrix Factorization (SVD et al.)
-- Collaborative Filtering (ALS and iALS, HALS, NeuralCF) 
-
-Week 3
------
-Seminar 5
-- Content-based recommender models
-- DSSM for RecSys
-- Hybrid recommenders taxonomy
-- LightFM (hybrid content model), Lightfm library
-
-Seminar 6
-- Gradient boosting for ranking task
-- Example of cascade recommender model (using gradient boosting on the second level)
-- Important preprocessing steps
-- Cross-validation types
-
-Week 4
-------
-Seminar 7
-- Sequential models
-- Next-basket and next-item prediction tasks
-
-Seminar 8
-- Context-aware recommender systems
-- Time-aware и time-dependent models
-
-Week 5
---------
-Seminars 9 - 10
-- Autoencoders and Variational autoencoders for RecSys (VAE, Mult-VAE, Multi-VAE, Rec-VAE)
-
-Week 6
------
-Seminar 11
-- Graph-based recommender systems overview
-- Inductive learning (out-of-sample users, cold start problem)
-- GNN, GCN, GraphSage -> PinSage, GAT
-- Explainability & interpretability of recommender systems
-- Knowledge-based graph recommenders
-
-Week 7
------
-Seminar 15 & Seminar 16
-- Vanilla Production-ready RecSys service.
-
+1. Introduction to recommender systems
+2. Similarity (neighborhood) based and linear approaches
+3. Matrix & tensor factorization
+4. Collaborative filtering 
+5. Context-aware and content models
+6. Hybrid approaches
+7. Sequential models for next-item recommendations
+8. Next-basket recommendations 
+9. Autoencoders and variational autoencoders for recommendations 
+10. LLM in recommender systems
+11. Multi-task & cross-domain recommendations 
+12. Graph and knowledge-graph based models 
+13. Interpretability and explainability 
+14. RL for recommender systems
+15. A/B testing and multi-armed bandites. Model monitoring 
+16. Vanilla API service for recommender system
 
 ## Contributors 
 
 * [Marina Ananyeva](https://github.com/anamarina)
-* [Alex Milogradskiy](https://github.com/Nemexur)
 * [Oleg Lashinin](https://github.com/fotol1)
+* [Denis Krasilnikov](https://github.com/deethereal)
 
 
 ## License
