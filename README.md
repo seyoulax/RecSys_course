@@ -46,6 +46,7 @@ Exam - oral examination on all topics (max 10 points).
 ## Contributors 
 
 * [Marina Ananyeva](https://github.com/anamarina)
+* [Alex Milogradskiy](https://github.com/nemexur)
 * [Oleg Lashinin](https://github.com/fotol1)
 * [Denis Krasilnikov](https://github.com/deethereal)
 
