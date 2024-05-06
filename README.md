@@ -34,8 +34,8 @@ Exam - oral examination on all topics (max 10 points).
 6. Hybrid approaches
 7. Sequential models for next-item recommendations
 8. Next-basket recommendations 
-9. Autoencoders and variational autoencoders for recommendations 
-10. LLM in recommender systems
+9. LLM in recommender systems 
+10. Autoencoders and variational autoencoders for recommendations 
 11. Multi-task & cross-domain recommendations 
 12. Graph and knowledge-graph based models 
 13. Interpretability and explainability 
